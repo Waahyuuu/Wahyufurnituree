@@ -5,6 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Products - Website Reparasi Kursi dan Sofa</title>
+
+    <!-- logo -->
+    <link
+      rel="icon"
+      type="image/png"
+      href="image/logo/Wahyufurniture Logo - Favicon - 32x32.png"
+    />
+
     <!-- icon bootstrap cdn -->
     <link
       rel="stylesheet"
@@ -29,7 +37,7 @@
   <body>
     <!-- header section -->
     <header class="header">
-      <a href="products.html" class="logo">
+      <a href="index.html" class="logo">
         <img src="image/logo/output-onlinepngtools.png" />
       </a>
       <form action="#" class="search-form">
@@ -68,10 +76,9 @@
 
     <!-- category section -->
     <section class="category">
-      <h1 class="title"> <span>Kategori Reparasi</span> </h1>
+      <h1 class="title"><span>Kategori Reparasi</span></h1>
 
       <div class="box-container">
-
         <a href="sofa.html" class="box">
           <img src="image/category/couch.png" alt="" />
           <h3>Sofa</h3>
@@ -83,91 +90,212 @@
         </a>
 
         <a href="#" class="box">
-          <img src="image/category/office-chair.png" alt="" />
-          <h3>Kursi Kerja</h3>
-        </a>
-
-        <a href="#" class="box">
           <img src="image/category/round-table.png" alt="" />
           <h3>Meja</h3>
         </a>
 
+        <div class="box category-btn" data-category="all">
+          <img src="image/category/lounge.png" alt="All Sets" />
+          <h3>All Sets</h3>
+        </div>
       </div>
     </section>
 
     <!-- product section -->
     <section class="products">
       <h1 class="title">
-        <span>Completed Repair</span> <a href="#">Selengkapnya >></a>
+        <span>All Products</span>
+        <a href="allproduct.html">Selengkapnya >></a>
       </h1>
 
       <div class="box-container">
-
         <div class="box">
           <div class="icons">
-            <a href="#" class="ri-heart-fill"></a>
-            <a href="#" class="bi bi-eye"></a>
+            <a id="view-btn" class="bi bi-eye"></a>
           </div>
           <div class="image">
             <img src="image/benner/Banner.png" alt="" />
           </div>
           <div class="content">
             <h3>Sofa Bludru</h3>
-            <div class="stars">
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-            </div>
-            <a href="#" class="bi bi-shop"> Klik Here </a>
+            <a href="#" class="bi bi-shop"> Pesan </a>
           </div>
         </div>
 
         <div class="box">
           <div class="icons">
-            <a href="#" class="ri-heart-fill"></a>
-            <a href="#" class="bi bi-eye"></a>
+            <a id="view-btn2" class="bi bi-eye"></a>
           </div>
           <div class="image">
             <img src="image/benner/Banner2.png" alt="" />
           </div>
           <div class="content">
             <h3>Sofa Bludru</h3>
-            <div class="stars">
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-            </div>
-            <a href="#" class="bi bi-shop"> Klik Here </a>
+            <a href="#" class="bi bi-shop"> Pesan </a>
           </div>
         </div>
 
         <div class="box">
           <div class="icons">
-            <a href="#" class="ri-heart-fill"></a>
-            <a href="#" class="bi bi-eye"></a>
+            <a id="view-btn3" class="bi bi-eye"></a>
           </div>
           <div class="image">
             <img src="image/benner/Banner3.png" alt="" />
           </div>
           <div class="content">
             <h3>Sofa Bludru</h3>
-            <div class="stars">
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-              <i class="ri-star-fill"></i>
-            </div>
-            <a href="#" class="bi bi-shop"> Klik Here </a>
+            <a href="#" class="bi bi-shop"> Pesan </a>
           </div>
         </div>
-
       </div>
     </section>
+
+    <!-- closer section -->
+    <div id="closer-view" class="ri-close-line"></div>
+    <div id="closer-view2" class="ri-close-line"></div>
+    <div id="closer-view3" class="ri-close-line"></div>
+
+    <!-- view1 section -->
+    <div class="view1">
+      <div class="view1-content">
+        <div class="image-section">
+          <img
+            src="image/Produk/Sofa L Virgo by Vassa Sofa - Sofa L minimalis.jpeg"
+            alt="Product Image"
+            class="main-image"
+          />
+          <div class="thumbnail-section">
+            <img
+              src="image/Produk/Sofa L Virgo by Vassa Sofa - Sofa L minimalis.jpeg"
+              alt="Thumbnail 1"
+              class="thumbnail active"
+            />
+            <img
+              src="image/Bahan/Canvas.jpeg"
+              alt="Thumbnail 2"
+              class="thumbnail"
+            />
+            <img
+              src="image/Bahan/Cenil.jpeg"
+              alt="Thumbnail 3"
+              class="thumbnail"
+            />
+          </div>
+        </div>
+        <div class="details-section">
+          <p class="category">Category Sofa</p>
+          <h2 class="product-title">Sofa L Virgo</h2>
+          <h3 class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto alias
+            quae aspernatur distinctio voluptatem,
+          </h3>
+          <p class="info-title">Detail</p>
+          <p class="product-info">
+            <strong>Desain :</strong> Modern <br />
+            <strong>Jenis Kain :</strong> Bludru Premium <br />
+            <strong>Busa :</strong> Deluxe 20cm, Deluxe 8cm <br />
+            <strong>Kaki :</strong> Plastik Premium <br />
+            <strong>Tipe :</strong> L Virgo <br />
+            <strong>Jumlah :</strong> 5 Buah <br />
+            <strong>Info :</strong> Sudah Selesai
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- view2 section -->
+    <div class="view2">
+      <div class="view2-content">
+        <div class="image-section">
+          <img
+            src="image/benner/Banner1.png"
+            alt="Product Image"
+            class="main-image"
+          />
+          <div class="thumbnail-section">
+            <img
+              src="image/Produk/Sofa L Virgo by Vassa Sofa - Sofa L minimalis.jpeg"
+              alt="Thumbnail 1"
+              class="thumbnail active"
+            />
+            <img
+              src="image/Bahan/Canvas.jpeg"
+              alt="Thumbnail 2"
+              class="thumbnail"
+            />
+            <img
+              src="image/Bahan/Cenil.jpeg"
+              alt="Thumbnail 3"
+              class="thumbnail"
+            />
+          </div>
+        </div>
+        <div class="details-section">
+          <p class="category">Category Sofa</p>
+          <h2 class="product-title">Sofa L Virgo</h2>
+          <h3 class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto alias
+            quae aspernatur distinctio voluptatem,
+          </h3>
+          <p class="info-title">Detail</p>
+          <p class="product-info">
+            <strong>Desain :</strong> Modern <br />
+            <strong>Jenis Kain :</strong> Bludru Premium <br />
+            <strong>Busa :</strong> Deluxe 20cm, Deluxe 8cm <br />
+            <strong>Kaki :</strong> Plastik Premium <br />
+            <strong>Tipe :</strong> L Virgo <br />
+            <strong>Jumlah :</strong> 5 Buah <br />
+            <strong>Info :</strong> Sudah Selesai
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- view3 section -->
+    <div class="view3">
+      <div class="view3-content">
+        <div class="image-section">
+          <img
+            src="image/benner/Banner2.png"
+            alt="Product Image"
+            class="main-image"
+          />
+          <div class="thumbnail-section">
+            <img
+              src="image/Produk/Sofa L Virgo by Vassa Sofa - Sofa L minimalis.jpeg"
+              alt="Thumbnail 1"
+              class="thumbnail active"
+            />
+            <img
+              src="image/Bahan/Canvas.jpeg"
+              alt="Thumbnail 2"
+              class="thumbnail"
+            />
+            <img
+              src="image/Bahan/Cenil.jpeg"
+              alt="Thumbnail 3"
+              class="thumbnail"
+            />
+          </div>
+        </div>
+        <div class="details-section">
+          <p class="category">Category Sofa</p>
+          <h2 class="product-title">Sofa L Virgo</h2>
+          <h3 class="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto alias
+            quae aspernatur distinctio voluptatem,
+          </h3>
+          <p class="info-title">Detail</p>
+          <p class="product-info">
+            <strong>Desain :</strong> Modern <br />
+            <strong>Jenis Kain :</strong> Bludru Premium <br />
+            <strong>Busa :</strong> Deluxe 20cm, Deluxe 8cm <br />
+            <strong>Kaki :</strong> Plastik Premium <br />
+            <strong>Tipe :</strong> L Virgo <br />
+            <strong>Jumlah :</strong> 5 Buah <br />
+            <strong>Info :</strong> Sudah Selesai
+          </p>
+        </div>
+      </div>
+    </div>
 
     <!-- footer section -->
     <section class="footer">
@@ -175,18 +303,27 @@
         <div class="box">
           <h3>Tentang Kami</h3>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. A tempore
-            soluta hic reprehenderit nisi libero?
+            WahyuFurniture adalah perusahaan jasa yang bergerak di bidang
+            furniture, memberikan jasa reparasi maupun berbagai macam produk
+            baru seperti sofa, kursi, dan meja.
           </p>
         </div>
 
         <div class="box">
           <h3>Link Menu</h3>
           <a href="index.html"> <i class="ri-arrow-right-line"></i> Home </a>
-          <a href="../index.html#about"> <i class="ri-arrow-right-line"></i> About </a>
-          <a href="../index.html#services"> <i class="ri-arrow-right-line"></i> Services </a>
-          <a href="products.html"> <i class="ri-arrow-right-line"></i> Products </a>
-          <a href="../index.html#contact"> <i class="ri-arrow-right-line"></i> Contact </a>
+          <a href="../index.html#about">
+            <i class="ri-arrow-right-line"></i> About
+          </a>
+          <a href="../index.html#services">
+            <i class="ri-arrow-right-line"></i> Services
+          </a>
+          <a href="products.html">
+            <i class="ri-arrow-right-line"></i> Products
+          </a>
+          <a href="../index.html#contact">
+            <i class="ri-arrow-right-line"></i> Contact
+          </a>
         </div>
 
         <div class="box">
@@ -204,10 +341,14 @@
     </section>
 
     <section class="credit">
-      <p>© 2025 <a href="https://portowahyu.framer.website/">WahyuFurniture</a> | All Rights Reserved</p>
+      <p>
+        © 2025 <a href="https://portowahyu.framer.website/">WahyuFurniture</a> |
+        All Rights Reserved
+      </p>
     </section>
 
     <!-- js -->
     <script src="js/script.js"></script>
+    <script src="js/product.js"></script>
   </body>
 </html>

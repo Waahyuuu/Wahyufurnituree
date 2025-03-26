@@ -31,20 +31,67 @@ window.onscroll = () => {
     searchForm.classList.remove('active');
 }
 
-let slides = document.querySelectorAll('.home .slides-container .slide');
-let index = 0;
+// slide
+document.addEventListener("DOMContentLoaded", function () {
+    let slides = document.querySelectorAll(".home .slides-container .slide");
+    let currentIndex = 0;
+    let slideInterval;
 
-function next() {
-    slides[index].classList.remove('active');
-    index = (index + 1) % slides.length;
-    slides[index].classList.add('active');
-}
+    function showSlide(index) {
+        slides.forEach(slide => slide.classList.remove("active"));
+        slides[index].classList.add("active");
+    }
 
-function prev() {
-    slides[index].classList.remove('active');
-    index = (index - 1 + slides.length) % slides.length;
-    slides[index].classList.add('active');
-}
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + slides.length) % slides.length;
+        showSlide(currentIndex);
+    }
+
+    function startAutoSlide() {
+        slideInterval = setInterval(nextSlide, 5000);
+    }
+
+    function stopAutoSlide() {
+        clearInterval(slideInterval);
+    }
+
+    // Tambahkan event listener untuk tombol Next dan Prev
+    document.getElementById("slide-next").addEventListener("click", function () {
+        nextSlide();
+        stopAutoSlide();
+        startAutoSlide();
+    });
+
+    document.getElementById("slide-prev").addEventListener("click", function () {
+        prevSlide();
+        stopAutoSlide();
+        startAutoSlide();
+    });
+
+    // Tampilkan slide pertama saat halaman dimuat
+    showSlide(currentIndex);
+    startAutoSlide(); // Mulai auto-slide saat halaman dibuka
+});
+
+
+//   selengkapnya
+document.querySelector(".read-more-btn").addEventListener("click", function () {
+    let fullText = document.querySelector(".full-text");
+    let btn = document.querySelector(".read-more-btn");
+
+    if (fullText.style.display === "none" || fullText.style.display === "") {
+        fullText.style.display = "block"; 
+        btn.innerText = "<<Tampilkan Sedikit";
+    } else {
+        fullText.style.display = "none";
+        btn.innerText = "Baca Selengkapnya >>";
+    }
+});
 
 // email library
 (function(){
@@ -72,16 +119,5 @@ function prev() {
       });
   }
 
-//   selengkapnya
-document.querySelector(".read-more-btn").addEventListener("click", function () {
-    let fullText = document.querySelector(".full-text");
-    let btn = document.querySelector(".read-more-btn");
 
-    if (fullText.style.display === "none" || fullText.style.display === "") {
-        fullText.style.display = "block"; 
-        btn.innerText = "<<Tampilkan Sedikit";
-    } else {
-        fullText.style.display = "none";
-        btn.innerText = "Baca Selengkapnya >>";
-    }
-});
+
