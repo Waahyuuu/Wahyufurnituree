@@ -33,8 +33,30 @@
 
     <!-- css -->
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/loader.css" />
   </head>
   <body>
+    <!-- loader section -->
+    <div class="loader2" id="loader2">
+      <div class="dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+          document.getElementById("loader2").style.display = "none";
+        }, 1500); // Loader akan hilang setelah 2 detik
+      });
+
+      window.addEventListener("beforeunload", function () {
+        document.getElementById("loader2").style.display = "flex";
+      });
+    </script>
+
     <!-- header section -->
     <header class="header">
       <a href="index.html" class="logo">
@@ -79,25 +101,52 @@
       <h1 class="title"><span>Kategori Reparasi</span></h1>
 
       <div class="box-container">
-        <a href="sofa.html" class="box">
-          <img src="image/category/couch.png" alt="" />
-          <h3>Sofa</h3>
-        </a>
-
-        <a href="#" class="box">
+        <a href="../allproduct.html#kursi" class="box">
           <img src="image/category/Sofa.png" alt="" />
           <h3>Kursi</h3>
         </a>
 
-        <a href="#" class="box">
+        <a href="../allproduct.html#sofa" class="box">
+          <img src="image/category/couch.png" alt="" />
+          <h3>Sofa</h3>
+        </a>
+
+        <a href="../allproduct.html#meja" class="box">
           <img src="image/category/round-table.png" alt="" />
           <h3>Meja</h3>
         </a>
 
-        <div class="box category-btn" data-category="all">
+        <a href="../allproduct.html#allset" class="box">
           <img src="image/category/lounge.png" alt="All Sets" />
           <h3>All Sets</h3>
-        </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Bahan section -->
+    <section class="bahan">
+      <h1 class="title"><span>Jenis Kain</span></h1>
+
+      <div class="box-container">
+        <a class="box">
+          <img src="image/Bahan/Beludru.jpeg" alt="" />
+          <h3>BLUDRU</h3>
+        </a>
+
+        <a class="box">
+          <img src="image/Bahan/Canvas.jpeg" alt="" />
+          <h3>CANVAS</h3>
+        </a>
+
+        <a class="box">
+          <img src="image/Bahan/Cenil.jpeg" alt="" />
+          <h3>CENIL</h3>
+        </a>
+
+        <a class="box">
+          <img src="image/Bahan/Oscar.jpeg" alt="" />
+          <h3>OSCAR</h3>
+        </a>
       </div>
     </section>
 
@@ -114,11 +163,11 @@
             <a id="view-btn" class="bi bi-eye"></a>
           </div>
           <div class="image">
-            <img src="image/benner/Banner.png" alt="" />
+            <img src="image/Produk/Gambar1.png" alt="" />
           </div>
           <div class="content">
-            <h3>Sofa Bludru</h3>
-            <a href="#" class="bi bi-shop"> Pesan </a>
+            <h3>Executive Classic</h3>
+            <a href="https://wa.me/6285706751095?text=Halo%20Wahyu%20Furniture%2C%20saya%20memiliki%20model%20seperti%20ini%20(Executive%20Classic)%20dan%20saya%20ingin%20melakukan%20reparasi%20di%20wahyufurniture." target="_blank" class="bi bi-shop"> Pesan </a>
           </div>
         </div>
 
@@ -127,11 +176,11 @@
             <a id="view-btn2" class="bi bi-eye"></a>
           </div>
           <div class="image">
-            <img src="image/benner/Banner2.png" alt="" />
+            <img src="image/Produk/Gambar 2.png" alt="" />
           </div>
           <div class="content">
-            <h3>Sofa Bludru</h3>
-            <a href="#" class="bi bi-shop"> Pesan </a>
+            <h3>Elegance Noir</h3>
+            <a href="https://wa.me/6285706751095?text=Halo%20Wahyu%20Furniture%2C%20saya%20memiliki%20model%20seperti%20ini%20(Elegance%20Noir)%20dan%20saya%20ingin%20melakukan%20reparasi%20di%20wahyufurniture." target="_blank" class="bi bi-shop"> Pesan </a>
           </div>
         </div>
 
@@ -140,11 +189,11 @@
             <a id="view-btn3" class="bi bi-eye"></a>
           </div>
           <div class="image">
-            <img src="image/benner/Banner3.png" alt="" />
+            <img src="image/Produk/Gambar3.png" alt="" />
           </div>
           <div class="content">
-            <h3>Sofa Bludru</h3>
-            <a href="#" class="bi bi-shop"> Pesan </a>
+            <h3>Blossom Ottoman</h3>
+            <a href="https://wa.me/6285706751095?text=Halo%20Wahyu%20Furniture%2C%20saya%20memiliki%20model%20seperti%20ini%20(Blossom%20Ottoman)%20dan%20saya%20ingin%20melakukan%20reparasi%20di%20wahyufurniture." target="_blank" class="bi bi-shop"> Pesan </a>
           </div>
         </div>
       </div>
@@ -160,11 +209,11 @@
       <div class="view1-content">
         <div class="image-section">
           <img
-            src="image/Produk/Sofa L Virgo by Vassa Sofa - Sofa L minimalis.jpeg"
+            src="image/Produk/001.png"
             alt="Product Image"
             class="main-image"
           />
-          <div class="thumbnail-section">
+          <!-- <div class="thumbnail-section">
             <img
               src="image/Produk/Sofa L Virgo by Vassa Sofa - Sofa L minimalis.jpeg"
               alt="Thumbnail 1"
@@ -180,25 +229,29 @@
               alt="Thumbnail 3"
               class="thumbnail"
             />
-          </div>
+          </div> -->
         </div>
         <div class="details-section">
-          <p class="category">Category Sofa</p>
-          <h2 class="product-title">Sofa L Virgo</h2>
+          <p class="category">Category Kursi</p>
+          <h2 class="product-title">Kursi Executive Classic</h2>
           <h3 class="product-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto alias
-            quae aspernatur distinctio voluptatem,
+            Executive Classic adalah kursi kerja ergonomis dengan desain
+              sederhana dan fungsional. Dibalut kulit sintetis cokelat yang
+              profesional, kursi ini memiliki sandaran tangan kokoh, mekanisme
+              putar fleksibel, dan roda stabil untuk mobilitas mudah. Dengan
+              bantalan nyaman dan desain yang mendukung postur tubuh, kursi ini
+              ideal untuk kerja produktif sepanjang hari.
           </h3>
-          <p class="info-title">Detail</p>
+          <!-- <p class="info-title">Detail</p>
           <p class="product-info">
-            <strong>Desain :</strong> Modern <br />
+            <strong>Desain :</strong> Executive Classic <br />
             <strong>Jenis Kain :</strong> Bludru Premium <br />
             <strong>Busa :</strong> Deluxe 20cm, Deluxe 8cm <br />
             <strong>Kaki :</strong> Plastik Premium <br />
             <strong>Tipe :</strong> L Virgo <br />
             <strong>Jumlah :</strong> 5 Buah <br />
             <strong>Info :</strong> Sudah Selesai
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -207,11 +260,11 @@
       <div class="view2-content">
         <div class="image-section">
           <img
-            src="image/benner/Banner1.png"
+            src="image/Produk/002.png"
             alt="Product Image"
             class="main-image"
           />
-          <div class="thumbnail-section">
+          <!-- <div class="thumbnail-section">
             <img
               src="image/Produk/Sofa L Virgo by Vassa Sofa - Sofa L minimalis.jpeg"
               alt="Thumbnail 1"
@@ -227,25 +280,28 @@
               alt="Thumbnail 3"
               class="thumbnail"
             />
-          </div>
+          </div> -->
         </div>
         <div class="details-section">
-          <p class="category">Category Sofa</p>
-          <h2 class="product-title">Sofa L Virgo</h2>
+          <p class="category">Category Kursi</p>
+          <h2 class="product-title">Kursi Elegance Noir</h2>
           <h3 class="product-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto alias
-            quae aspernatur distinctio voluptatem,
+            Elegance Noir adalah kursi berlengan dengan desain modern dan mewah.
+            Dibuat dengan rangka logam putih yang kokoh serta bantalan empuk
+            berlapis beludru hitam Cocok untuk ruang tamu, ruang kerja, atau
+            lounge. kursi ini menghadirkan gaya minimalis dengan nuansa mewah
+            yang menambah kesan eksklusif pada ruangan Anda.
           </h3>
-          <p class="info-title">Detail</p>
+          <!-- <p class="info-title">Detail</p>
           <p class="product-info">
-            <strong>Desain :</strong> Modern <br />
+            <strong>Desain :</strong> Elegance Noir <br />
             <strong>Jenis Kain :</strong> Bludru Premium <br />
             <strong>Busa :</strong> Deluxe 20cm, Deluxe 8cm <br />
             <strong>Kaki :</strong> Plastik Premium <br />
             <strong>Tipe :</strong> L Virgo <br />
             <strong>Jumlah :</strong> 5 Buah <br />
             <strong>Info :</strong> Sudah Selesai
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -254,11 +310,11 @@
       <div class="view3-content">
         <div class="image-section">
           <img
-            src="image/benner/Banner2.png"
+            src="image/Produk/003.png"
             alt="Product Image"
             class="main-image"
           />
-          <div class="thumbnail-section">
+          <!-- <div class="thumbnail-section">
             <img
               src="image/Produk/Sofa L Virgo by Vassa Sofa - Sofa L minimalis.jpeg"
               alt="Thumbnail 1"
@@ -274,16 +330,19 @@
               alt="Thumbnail 3"
               class="thumbnail"
             />
-          </div>
+          </div> -->
         </div>
         <div class="details-section">
-          <p class="category">Category Sofa</p>
-          <h2 class="product-title">Sofa L Virgo</h2>
+          <p class="category">Category Kursi</p>
+          <h2 class="product-title">Bangku Blossom Ottoman</h2>
           <h3 class="product-desc">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto alias
-            quae aspernatur distinctio voluptatem,
+            Blossom Ottoman adalah bangku multifungsi dengan desain elegan dan
+              artistik. Dibalut kain bermotif bunga dengan aksen beludru merah
+              muda, serta kaki kokoh berwarna putih, bangku ini cocok sebagai
+              sandaran kaki, tempat duduk tambahan, atau elemen dekoratif yang
+              mempercantik ruangan.
           </h3>
-          <p class="info-title">Detail</p>
+          <!-- <p class="info-title">Detail</p>
           <p class="product-info">
             <strong>Desain :</strong> Modern <br />
             <strong>Jenis Kain :</strong> Bludru Premium <br />
@@ -292,7 +351,7 @@
             <strong>Tipe :</strong> L Virgo <br />
             <strong>Jumlah :</strong> 5 Buah <br />
             <strong>Info :</strong> Sudah Selesai
-          </p>
+          </p> -->
         </div>
       </div>
     </div>
@@ -350,5 +409,6 @@
     <!-- js -->
     <script src="js/script.js"></script>
     <script src="js/product.js"></script>
+    <script src="js/search.js"></script>
   </body>
 </html>

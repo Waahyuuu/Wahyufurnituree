@@ -119,5 +119,19 @@ document.querySelector(".read-more-btn").addEventListener("click", function () {
       });
   }
 
+// loader1
+document.addEventListener("DOMContentLoaded", function () {
+    if (!sessionStorage.getItem("hasLoaded")) {
+        setTimeout(() => {
+            document.getElementById("loader").style.display = "none";
+            sessionStorage.setItem("hasLoaded", "true");
+        }, 2500); // Loader akan hilang setelah 2.5 detik
+    } else {
+        document.getElementById("loader").style.display = "none";
+    }
+});
+
+
+
 
 
