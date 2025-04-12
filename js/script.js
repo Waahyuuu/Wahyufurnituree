@@ -15,8 +15,8 @@ document.querySelector('#menu-btn').onclick = () => {
 let contact = document.querySelector('#contact-btn');
 
 document.querySelector('#contact-btn').onclick = () => {
-    let phoneNumber = "6285340012806";
-    let message = "Halo, saya ingin bertanya tentang produk Anda.";
+    let phoneNumber = "6285706751095";
+    let message = "Halo, Ada masalah pada website anda.";
     let contact = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
     window.open(contact, "_blank");
 }
