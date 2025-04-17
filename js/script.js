@@ -95,7 +95,7 @@ document.querySelector(".read-more-btn").addEventListener("click", function () {
 
 // email library
 (function(){
-    emailjs.init("ysf0pBtaG2quYX_su");
+    emailjs.init("iXi_B7UnpUYwBtdMF");
   })();
 
   function sendEmail(event) {
