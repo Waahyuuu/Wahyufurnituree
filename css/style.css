@@ -2631,6 +2631,10 @@ section {
     flex-direction: column;
     text-align: center;
   }
+  .view25-content {
+    flex-direction: column;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 768px) {
@@ -2649,6 +2653,14 @@ section {
   }
   .header .search-form.active {
     top: 110%;
+  }
+  .bahan .box-container {
+    flex-wrap: wrap; /* supaya item bisa turun ke bawah */
+    justify-content: center; /* rata tengah */
+  }
+
+  .bahan .box-container .box {
+    width: calc(50% - 10px); /* 2 box per baris dengan gap */
   }
 }
 
