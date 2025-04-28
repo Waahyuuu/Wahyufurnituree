@@ -584,6 +584,19 @@ section {
   top: 0;
 }
 
+.badge {
+  background: #ff7979;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  display: inline-block;
+  margin-bottom: 4px;
+  margin-left: 4px;
+  margin-top: 4px;
+  z-index: 9999rem;
+}
+
 .products .box-container .box .icons {
   position: absolute;
   top: -100%;
@@ -2463,99 +2476,99 @@ section {
     left: auto;
     right: 8rem;
   }
-  .view1-content{
+  .view1-content {
     flex-direction: column;
     text-align: center;
   }
-  .view2-content{
+  .view2-content {
     flex-direction: column;
     text-align: center;
   }
-  .view3-content{
+  .view3-content {
     flex-direction: column;
     text-align: center;
   }
-  .view4-content{
+  .view4-content {
     flex-direction: column;
     text-align: center;
   }
-  .view5-content{
+  .view5-content {
     flex-direction: column;
     text-align: center;
   }
-  .view6-content{
+  .view6-content {
     flex-direction: column;
     text-align: center;
   }
-  .view7-content{
+  .view7-content {
     flex-direction: column;
     text-align: center;
   }
-  .view8-content{
+  .view8-content {
     flex-direction: column;
     text-align: center;
   }
-  .view9-content{
+  .view9-content {
     flex-direction: column;
     text-align: center;
   }
-  .view10-content{
+  .view10-content {
     flex-direction: column;
     text-align: center;
   }
-  .view11-content{
+  .view11-content {
     flex-direction: column;
     text-align: center;
   }
-  .view12-content{
+  .view12-content {
     flex-direction: column;
     text-align: center;
   }
-  .view13-content{
+  .view13-content {
     flex-direction: column;
     text-align: center;
   }
-  .view14-content{
+  .view14-content {
     flex-direction: column;
     text-align: center;
   }
-  .view15-content{
+  .view15-content {
     flex-direction: column;
     text-align: center;
   }
-  .view16-content{
+  .view16-content {
     flex-direction: column;
     text-align: center;
   }
-  .view17-content{
+  .view17-content {
     flex-direction: column;
     text-align: center;
   }
-  .view18-content{
+  .view18-content {
     flex-direction: column;
     text-align: center;
   }
-  .view19-content{
+  .view19-content {
     flex-direction: column;
     text-align: center;
   }
-  .view20-content{
+  .view20-content {
     flex-direction: column;
     text-align: center;
   }
-  .view21-content{
+  .view21-content {
     flex-direction: column;
     text-align: center;
   }
-  .view22-content{
+  .view22-content {
     flex-direction: column;
     text-align: center;
   }
-  .view23-content{
+  .view23-content {
     flex-direction: column;
     text-align: center;
   }
-  .view24-content{
+  .view24-content {
     flex-direction: column;
     text-align: center;
   }
@@ -2604,7 +2617,7 @@ section {
   .bahan .box h3 {
     font-size: 1.8rem;
   }
-  .view1-content{
+  .view1-content {
     padding: 1rem;
   }
 
