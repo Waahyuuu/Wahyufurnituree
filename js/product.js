@@ -23,6 +23,7 @@ let closerView21 = document.querySelector('#closer-view21');
 let closerView22 = document.querySelector('#closer-view22');
 let closerView23 = document.querySelector('#closer-view23');
 let closerView24 = document.querySelector('#closer-view24');
+let closerView25 = document.querySelector('#closer-view25');
 
 // view1
 closerView.onclick = () => {
@@ -303,4 +304,15 @@ let view24 = document.querySelector('.view24');
 document.querySelector('#view-btn24').onclick = () => {
     closerView24.style.display = "block";
     view24.classList.toggle('active');
+}
+
+// view25
+closerView25.onclick = () => {
+    closerView25.style.display = 'none';
+    view25.classList.remove('active');
+}
+let view25 = document.querySelector('.view25');
+document.querySelector('#view-btn25').onclick = () => {
+    closerView25.style.display = "block";
+    view25.classList.toggle('active');
 }
