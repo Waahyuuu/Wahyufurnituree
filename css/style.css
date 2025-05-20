@@ -2514,6 +2514,12 @@ section {
 }
 
 /* bagian responsive */
+@media screen and (max-width: 1024px){
+  .services .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+}
+
 @media screen and (max-width: 991px) {
   html {
     font-size: 55%;
@@ -2634,6 +2640,14 @@ section {
   .view25-content {
     flex-direction: column;
     text-align: center;
+  }
+
+  .products .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  }
+
+  .services .box-container {
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   }
 }
 
